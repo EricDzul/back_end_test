@@ -56,7 +56,7 @@ router.delete('/contacts/:id', (req, res) => {
         if (data_index !== -1) {
             res.status(204).json({ "data": [] })
         } else {
-            res.status(404).json({ "message": "No Found" });
+            res.status(404).json({ "message": "404 Not Found" });
         }
     }
     catch (error) {
